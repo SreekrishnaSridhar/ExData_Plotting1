@@ -1,0 +1,5 @@
+source("MainData.R")
+png("plot2.png",width = 480,height = 480)
+par(mfrow = c(1,1))
+plot(data$Time,as.numeric(data$Global_active_power),type = "l",xlab = "",ylab = "Global Active Power(kilowatts)")
+dev.off()

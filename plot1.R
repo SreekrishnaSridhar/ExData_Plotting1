@@ -1,0 +1,5 @@
+source("MainData.R")
+png("plot1.png",width = 480,height = 480)
+par(mfrow =  c(1,1))
+hist(as.numeric(data$Global_active_power), xlab = "Global Active Power(kilowatts)",col = "red",main = "Global Active Power")
+dev.off()
